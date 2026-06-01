@@ -1,1 +1,52 @@
+:root{
+  --background:;
+  --background-alt:;
+  --main-text:;
+  --main-text-alt:;
+  --sub-text:;
+  --sub-text-alt:;
+  
+  --p-size:;
+  --header-size:;
+  --sub-size:;
+  --h1-size:;
+  --h2-size:;
+  --h3-size:;
+  
+  --heavy-weight:;
+  --mild-weight:;
+  --light-weight:;
+  
+  --main-font:;
+  --sub-font:;
+}
+/*html, body, header, paragraph,  all*/
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
 
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: var(--background);
+}
+
+h1{
+  font-size: var(--h1-size);
+  text-align: center;
+}
+
+h2{
+  font-size: var(--h2-size);
+  text-align: center;
+}
+
+h3{
+  font-size: var(--h3-size);
+  text-align: left;
+}
