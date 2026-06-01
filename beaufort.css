@@ -120,3 +120,57 @@ button a{
   background-image: linear-gradient(to right, var(--color1), var(--color2), var(--color3),var(--color4) );
 }
 
+/*Navigation Bar*/
+nav{
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, .1);
+  
+  backdrop-filter: blur(10px);                  /* Blurs the content underneath */
+    z-index: 10;
+    padding: 5px;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  color: var(--sub-text);
+}
+
+.letter-logo{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, var(--color1), var(--color2), var(--color3),var(--color4));
+  padding: 20px;
+  height: 5px;
+  width: 5px;
+  color: var(--sub-text);
+  font-weight: var(--heavy-weight);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.logo{
+  float: left;
+  font-weight: var(--heavy-weight);
+}
+
+.logo-span{
+  color: var(--main-text-alt);
+  font-weight: var(--light-weight);
+}
+
+.nav-list{
+  font-size: .8em;
+  padding: 10px;
+}
+
+#contact-button{
+  background: linear-gradient(to left, var(--color1), var(--color2), var(--color3),var(--color4));
+  border-radius: 10px;
+  padding: 10px 5px;
+}
