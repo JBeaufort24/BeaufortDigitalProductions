@@ -1,9 +1,9 @@
 :root{
-  --background:;
-  --background-alt:;
-  --main-text:;
-  --main-text-alt:;
-  --sub-text:;
+  --background: rgba(25 ,25, 25, 1);
+  --background-alt: rgba(225, 225, 225, 1);
+  --main-text: rgba(50, 50, 50, 1);
+  --main-text-alt: rgba(200, 200, 200, 1);
+  --sub-text: rgba(100, 150, 250);
   --sub-text-alt:;
   
   --p-size: .9em;
