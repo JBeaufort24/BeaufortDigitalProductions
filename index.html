@@ -7,13 +7,13 @@
   <!--Icons for the Website-->
   
   <!--Style Sheet of BDP-->
-  <style src="/beaufort.css"></style>
+  <link rel="stylesheet" href="/beaufort.css">
   <title>Beaufort Digital Productions</title>
 </head>
 <body>
   
   <header class="beafort-header">
-    <h1 class="main-heading">Crafting the future<span class="heading">Of digital media</span></h1>
+    <h1 class="main-heading">Crafting the future <span class="heading">Of digital media</span></h1>
     <p class="main-paragraph">We build immersive websites, produce dynamic video animations, and mix pristine audio experiences tailored for modern brands.</p>
     <div class="buttons">
       <button class="header-button"><a href=#projects>Explore Our Work</button>
@@ -107,10 +107,37 @@
     
     <section class="contact" id="contact">
       <form class="contact-form">
+        <h1 class="contact-header">Let's build your dream together</h1>
+        <p class="contact-paragraph">Tell us about your production vision. We usually respond within 24 hours.</p>
         
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Surname">
+        <br>
+        <input type="checkbox" id="webdev" name="fav_language" value="webdev">
+        <label for="webdev">Web Development</label><br>
+        <input type="checkbox" id="webdes" name="fav_language" value="webdes">
+        <label for="webdes">Web Design</label><br>
+        <input type="checkbox" id="audio" name="fav_language" value="audio">
+        <label for="audio">Audio Editing</label>
+        <input type="checkbox" id="video" name="fav_language" value="video">
+        <label for="video">Video Editing</label>
+        <input type="checkbox" id="full" name="fav_language" value="full">
+        <label for="full">Full Suite</label>
+        
+        <label for="message">Describe Your Vision Here</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Describe your idea and dream here..."></textarea>
+        <button type="submit" class="submit">Initiate Project Consultation</button>
+
       </form>
     </section>
   </main>
+  
+  <footer class="footer-beaufort">
+    
+  </footer>
+  
 </body>
 
 <!--JavaScript of BDP-->
