@@ -58,7 +58,7 @@ h3{
 
 p{
   font-size: var(--p-size);
-  text-align: justify;
+  text-align: left;
 }
 
 button{
@@ -173,4 +173,35 @@ nav li{
   background: linear-gradient(to left, var(--color1), var(--color2), var(--color3),var(--color4));
   border-radius: 10px;
   padding: 10px 5px;
+}
+
+/*Skill Section*/
+.skills-header{
+  color: var(--main-text-alt);
+}
+
+.skills-sub{
+  color: var(--sub-text);
+}
+
+.skills-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr)
+}
+
+.skill-card{
+  background: rgba(0, 0, 0, .5);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 10px;
+}
+
+.skill-header{
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--sub-text);
+}
+
+.skill-paragraph{
+  color: var(--main-text-alt);
 }
