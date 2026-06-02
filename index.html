@@ -11,7 +11,7 @@
   <title>Beaufort Digital Productions</title>
 </head>
 <body>
-  <nav class="beaufort-navigation">
+  <!--<nav class="beaufort-navigation">
     <ul class="nav-categories">
       <div class="letter-logo">B</div>
       <a href="#">
@@ -72,14 +72,24 @@
           <p class="skill-paragraph">Crystal-clear audio editing, post-production mixing, sound design, and custom mastering built specifically to optimize podcast and media narratives.</p>
         </div>
       </div>
-    </section>
+    </section>-->
     
     <section class="projects" id="projects">
       <h1 class="project-header">Projects</h1>
       <h2 class="project-sub">Our Curated Work</h2>
       
-      <!--Insert filter function here-->
+      <div class="filters">
+        <button class="filter-btn active" onclick="filterProducts('all')">All Projects</button>
+        <button class="filter-btn" onclick="filterProducts('webdev')">Web Development</button>
+        <button class="filter-btn" onclick="filterProducts('webdes')">Web Design</button>
+        <button class="filter-btn" onclick="filterProducts('video')">Video Editing</button>
+        <button class="filter-btn" onclick="filterProducts('audio')">Audio Editing</button>
+        <button class="filter-btn" onclick="filterProducts('podcast')">Podcasts</button>
+      </div>
       
+      <div class="project-grid" id="projectGrid">
+        <!-- Products will be loaded by JavaScript -->
+      </div>
     </section>
     
     <section class="workflow" id="workflow">

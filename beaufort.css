@@ -205,3 +205,42 @@ nav li{
 .skill-paragraph{
   color: var(--main-text-alt);
 }
+
+/*Project Section*/
+.project-header{
+  color: var(--main-text-alt);
+}
+
+.project-sub{
+  color: var(--sub-text);
+  font-weight: var(--light-weight);
+}
+
+/*Filter Section*/
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: inherit;
+  border: 2px solid var(--color4);
+  padding: 0.4em 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: var(--mild-font);
+  font-size: var(--p-size);
+  color: var(--main-text-alt);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--background-alt);
+  color: var(--sub-text-alt);
+  border-color: var(--color3);
+  transform: translateY(-1px);
+}
