@@ -78,18 +78,64 @@
       <h1 class="project-header">Projects</h1>
       <h2 class="project-sub">Our Curated Work</h2>
       
-      <div class="filters">
-        <button class="filter-btn active" onclick="filterProducts('all')">All Projects</button>
-        <button class="filter-btn" onclick="filterProducts('webdev')">Web Development</button>
-        <button class="filter-btn" onclick="filterProducts('webdes')">Web Design</button>
-        <button class="filter-btn" onclick="filterProducts('video')">Video Editing</button>
-        <button class="filter-btn" onclick="filterProducts('audio')">Audio Editing</button>
-        <button class="filter-btn" onclick="filterProducts('podcast')">Podcasts</button>
-      </div>
+      <div class="filter-buttons">
+  <button class="btn active" data-filter="all">All</button>
+  <button class="btn" data-filter="web-dev">Web Development</button>
+  <button class="btn" data-filter="web-design">Web Design</button>
+  <button class="btn" data-filter="audio">Audio Editing</button>
+  <button class="btn" data-filter="video">Video Editing</button>
+  <button class="btn" data-filter="podcasting">Podcasting</button>
+</div>
+
+<div class="projects-grid">
+  
+  <div class="project-card" data-category="web-dev">
+    <img src="https://via.placeholder.com/350x200" alt="E-commerce Website" class="project-img">
+    <div class="project-content">
+      <span class="project-category">Web Development</span>
+      <h3 class="project-title">E-Commerce Platform</h3>
+      <p class="project-description">A fully responsive online store with a custom shopping cart and secure checkout integration.</p>
+    </div>
+  </div>
+  
+  <div class="project-card" data-category="web-design">
+    <img src="https://via.placeholder.com/350x200" alt="UI/UX Concept" class="project-img">
+    <div class="project-content">
+      <span class="project-category">Web Design</span>
+      <h3 class="project-title">SaaS Dashboard UI</h3>
+      <p class="project-description">Clean, modern UI/UX design focusing on data visualization and user-friendly navigation aesthetics.</p>
+    </div>
+  </div>
+  
+  <div class="project-card" data-category="audio">
+    <img src="https://via.placeholder.com/350x200" alt="Audio Cleaning" class="project-img">
+    <div class="project-content">
+      <span class="project-category">Audio Editing</span>
+      <h3 class="project-title">Commercial Voiceover Mix</h3>
+      <p class="project-description">Noise reduction, equalization, and mastering for a 30-second radio advertisement.</p>
+    </div>
+  </div>
+  
+  <div class="project-card" data-category="video">
+    <img src="https://via.placeholder.com/350x200" alt="Video Project" class="project-img">
+    <div class="project-content">
+      <span class="project-category">Video Editing</span>
+      <h3 class="project-title">Cinematic Travel Vlog</h3>
+      <p class="project-description">Dynamic color grading, sound design, and seamless transitions for a YouTube travel creator.</p>
+    </div>
+  </div>
+  
+  <div class="project-card" data-category="podcasting">
+    <img src="https://via.placeholder.com/350x200" alt="Podcast Episode" class="project-img">
+    <div class="project-content">
+      <span class="project-category">Podcasting</span>
+      <h3 class="project-title">Tech Talk - Episode 12</h3>
+      <p class="project-description">Full production of a multi-guest podcast, including intro/outro arrangement and loudness matching.</p>
+    </div>
+  </div>
+  
+</div>
       
-      <div class="project-grid" id="projectGrid">
-        <!-- Products will be loaded by JavaScript -->
-      </div>
     </section>
     
     <section class="workflow" id="workflow">
