@@ -10,6 +10,7 @@
   --color3: rgba(0, 150, 255, 1);
   --color4: rgba(0, 200, 255, 1);
   
+  --small-text: .5em;
   --p-size: .9em;
   --header-size: 2.2em;
   --sub-size: 1.7em;
@@ -217,7 +218,6 @@ nav li{
 }
 
 /*Filter Section*/
-/* Filter Buttons */
 .filter-buttons {
     display: flex;
     justify-content: center;
@@ -227,35 +227,34 @@ nav li{
 }
 
 .btn {
-    background-color: #fff;
-    border: 2px solid #007bff;
-    color: #007bff;
-    padding: 8px 18px;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 25px;
+    background-color: inherit;
+    border: 2px solid var(--color4);
+    color: var(--sub-text);
+    padding: 10px 15px;
+    font-size: var(--p-size);
+    font-weight: var(--mild-weight);
+    border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn:hover, .btn.active {
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--background-alt);
+    color: var(--sub-text-alt);
 }
 
 /* Grid Layout */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 25px;
+    gap: 20px;
 }
 
 /* Card Styling */
 .project-card {
-    background: #fff;
+    background: var(--background-alt);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, opacity 0.3s ease;
     display: block; /* Default block behavior */
 }
@@ -275,10 +274,11 @@ nav li{
 }
 
 .project-category {
-    font-size: 11px;
+    font-size: var(--small-text);
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #007bff;
+    font-size: var(--small-text);
+    color: var(--color3);
     font-weight: bold;
     display: inline-block;
     margin-bottom: 8px;
@@ -286,13 +286,14 @@ nav li{
 
 .project-title {
     margin: 0 0 10px 0;
-    font-size: 20px;
+    font-size: var(--main-text);
+    color: var(--color2);
 }
 
 .project-description {
     margin: 0;
-    color: #666;
-    font-size: 14px;
+    color: var(--sub-text-alt);
+    font-size: var(--p-size);
     line-height: 1.5;
 }
 
