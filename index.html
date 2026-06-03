@@ -143,7 +143,7 @@
   </div>
   </a>
 </div>
-    </section>-->
+    </section>
     
     <section class="workflow" id="workflow">
       <h1 class="workflow-header">Workflow</h1>
@@ -165,33 +165,53 @@
           <p class="workflow-paragraph">We ...</p>
         </div>
       </div>
-    </section>
+    </section>-->
     
     <section class="contact" id="contact">
       <form class="contact-form">
         <h1 class="contact-header">Let's build your dream together</h1>
         <p class="contact-paragraph">Tell us about your production vision. We usually respond within 24 hours.</p>
         
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" placeholder="First Name"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" placeholder="Surname">
-        <br>
-        <input type="checkbox" id="webdev" name="fav_language" value="webdev">
-        <label for="webdev">Web Development</label><br>
-        <input type="checkbox" id="webdes" name="fav_language" value="webdes">
-        <label for="webdes">Web Design</label><br>
-        <input type="checkbox" id="audio" name="fav_language" value="audio">
-        <label for="audio">Audio Editing</label>
-        <input type="checkbox" id="video" name="fav_language" value="video">
-        <label for="video">Video Editing</label>
-        <input type="checkbox" id="full" name="fav_language" value="full">
-        <label for="full">Full Suite</label>
-        
-        <label for="message">Describe Your Vision Here</label>
-        <textarea id="message" name="message" rows="4" cols="30" placeholder="Describe your idea and dream here..."></textarea>
-        <button type="submit" class="submit">Initiate Project Consultation</button>
-      </form>
+        <form id="portfolio-contact-form" action="https://formspree.io/f/your_form_id_here" method="POST">
+  
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  
+  <div class="form-group">
+    <label>What services are you interested in? (Optional)</label>
+    <div class="checkbox-group">
+      <label class="checkbox-label">
+        <input type="checkbox" name="category[]" value="Web Development"> Web Development
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" name="category[]" value="Web Design"> Web Design
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" name="category[]" value="Audio Editing"> Audio Editing
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" name="category[]" value="Video Editing"> Video Editing
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" name="category[]" value="Full Suite"> Full Suite
+      </label>
+    </div>
+  </div>
+  
+  <button type="submit" id="submit-btn">Send Message</button>
+</form>
+</div>
+
+<div id="success-popup" class="popup-notification">
+  Email sent successfully!
+</div>
     </section>
   </main>
   
@@ -203,5 +223,6 @@
 
 <!--JavaScript of BDP-->
 <script src="/FilterSection.js"></script>
+<script src="/FormJavaScript.js"></script>
 
 </html>
