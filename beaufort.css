@@ -350,6 +350,13 @@ nav li{
 }
 
 /*Form Section*/
+.contact-header{
+  color: var(--main-text-alt);
+}
+
+.contact-paragraph{
+  color: var(--main-text-alt);
+}
 
 .contact-form {
       background: rgba(30, 30, 30, 1);
