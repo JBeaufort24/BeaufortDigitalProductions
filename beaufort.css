@@ -312,3 +312,39 @@ nav li{
 }
 
 /*Workflow Section*/
+.workflow-header{
+  color: var(--sub-text);
+}
+
+.workflow-sub{
+  color: var(--main-text-alt);
+}
+
+.workflow.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;;
+}
+
+.workflow-card{
+  width: auto;
+  padding: 50px 25px;
+  margin: 10px;
+  border-radius: 10px;
+  background: var(--main-text);
+}
+
+.workflow-number{
+  color: var(--main-text-alt);
+  font-weight: var(--heavy-weight);
+  font-size: var(--sub-size);
+}
+
+.workflow-title{
+  color: var(--sub-text);
+  padding: 10px 0;
+}
+
+.workflow-paragraph{
+  color: var(--background);
+}
