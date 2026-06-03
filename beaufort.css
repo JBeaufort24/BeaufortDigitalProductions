@@ -85,6 +85,7 @@ header{
 
 .main-heading{
   color: var(--background-alt);
+  font-size: var(--header-size);
 }
 
 span.heading{
@@ -96,16 +97,29 @@ span.heading{
 .main-paragraph{
   color: var(--main-text-alt);
   padding: 50px 5px;
+  text-align: center;
 }
 
 .buttons{
-  display: flex;
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.header-button{
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
   transition: all 0.2s ease;
-  color: white;
+  color: var(--sub-text);
   margin-bottom: 40px;
+  width: 20%;
 }
 
 button a{
@@ -127,7 +141,7 @@ nav{
   top: 0;
   background: rgba(0, 0, 0, .1);
   
-  backdrop-filter: blur(10px);                  /* Blurs the content underneath */
+  backdrop-filter: blur(10px);/* Blurs the content underneath */
     z-index: 10;
     padding: 5px;
 }
@@ -155,7 +169,7 @@ nav li{
   margin: 10px;
 }
 
-.logo{
+.logo:not(.nav-list){
   float: left;
   font-weight: var(--heavy-weight);
 }
@@ -166,8 +180,15 @@ nav li{
 }
 
 .nav-list{
-  font-size: .8em;
+  font-size: var(--p-size);
   padding: 10px;
+  float: right;
+}
+
+.nav-links{
+  position: absolute;
+  top: 10px;
+  right: 5px;
 }
 
 #contact-button{
@@ -187,7 +208,7 @@ nav li{
 
 .skills-grid{
   display: grid;
-  grid-template-columns: repeat(1, 1fr)
+  grid-template-columns: 1fr 1fr;
 }
 
 .skill-card{
@@ -219,16 +240,17 @@ nav li{
 
 /*Filter Section*/
 .filter-buttons {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 10px;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .btn {
     background-color: inherit;
-    border: 1px solid var(--color4);
+    border: 1px solid var(--sub-text);
     color: var(--sub-text);
     padding: 10px 15px;
     font-size: var(--p-size);
@@ -320,10 +342,9 @@ nav li{
   color: var(--main-text-alt);
 }
 
-.workflow.grid{
+.workflow-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .workflow-card{
@@ -358,6 +379,15 @@ nav li{
   color: var(--main-text-alt);
 }
 
+.fill-text{
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
 .contact-form {
       background: rgba(30, 30, 30, 1);
       border-radius: 12px;
@@ -365,12 +395,13 @@ nav li{
       margin: 10px;
       box-shadow: 0 5px 5px -3px var(--background);
       border: 1px solid ;
-      width: 90%;
+      width: 95%;
   }
 
   .form-group {
       margin-bottom: .5em;
       color: var(--sub-text);
+      padding: 0 10px;
   }
 
   label {
@@ -396,15 +427,16 @@ nav li{
   }
 
   .checkbox-group {
-      margin-top: 0.5rem;
-      display: block;
-      text-align: center;
+      display: inline-flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 10px;
+      margin-bottom: 40px;
       width: 100%;
   }
 
   .checkbox-label {
       align-items: center;
-      margin-bottom: 0.5rem;
       cursor: pointer;
       font-weight: var(--light-weight);
       font-size: var(--p-size);
@@ -412,28 +444,30 @@ nav li{
       border-radius: 5px;
       padding: 5px;
       margin: 10px;
+      display: flex;
   }
 
   .checkbox-label input {
-      margin-right: 0.75rem;
+      margin-right: 0.75em;
       width: 1.5em;
       height: 1.5em;
   }
 
-  button {
-      width: 100%;
-      background: linear-gradient(to right, var(--color1), var(--color4));
-      color: var(--sub-text);
-      padding: 1em;
-      border: none;
-      border-radius: 5px;
-      font-size: var(--sub-text);
-      font-weight: var(--mild-weight);
-      cursor: pointer;
-      transition: background-color 0.2s;
+  #submit-btn {
+    margin-bottom: 40px;
+    width: 30%;
+    background: linear-gradient(to right, var(--color1), var(--color4));
+    color: var(--sub-text);
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--sub-text);
+    font-weight: var(--mild-weight);
+    cursor: pointer;
+    transition: background-color 0.2s;
   }
 
-  button:hover {
+  #submit-btn:hover {
       background: var(--sub-text);
   }
 
