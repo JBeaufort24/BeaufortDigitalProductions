@@ -1,6 +1,8 @@
 :root{
   --background: rgba(25 ,25, 25, 1);
   --background-alt: rgba(225, 225, 225, 1);
+  --light-background: rgba(75, 75, 75, 1);
+  --light-background-alt: rgba(175, 175, 175, 1);
   --main-text: rgba(50, 50, 50, 1);
   --main-text-alt: rgba(200, 200, 200, 1);
   --sub-text: whitesmoke;
@@ -368,7 +370,7 @@ nav li{
 }
 
 .workflow-paragraph{
-  color: var(--background);
+  color: var(--light-background-alt);
 }
 
 /*Form Section*/
@@ -425,12 +427,6 @@ nav li{
       border-radius: 5px;
       box-sizing: border-box;
       font-size: var(--p-size);
-  }
-
-  input:focus {
-      outline: none;
-      border-color: var(--main-text);
-      box-shadow: 0 0 0 3px var(--color4);
   }
 
   .checkbox-group {
@@ -500,7 +496,7 @@ nav li{
   }
   
   /*Media Qeuries*/
-  @media only screen and (max-width: 480px){
+  @media only screen and (max-width: 680px){
     body{
       max-width: 97%;
     }
