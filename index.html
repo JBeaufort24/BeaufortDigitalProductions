@@ -25,6 +25,9 @@
       <a href="#projects">
         <li class="nav-list" id="work">Work</li>
       </a>
+      <a href="#review">
+        <li class="nav-list" id="reviews">Reviews</li>
+      </a>
       <a href="#workflow">
         <li class="nav-list" id="process">Process</li>
       </a>
@@ -89,62 +92,62 @@
         <button class="btn" data-filter="podcasting">Podcasting</button>
     </div>
 
-<div class="projects-grid">
-  <a href="https://whisperinkhome.netlify.app/" target="_blank">
-    <div class="project-card" data-category="web-dev">
-      <img src="/ProjectImages/ProjectImage 1.jpg" class="project-img">
-    <div class="project-content">
-      <span class="project-category">Web Development</span>
-      <h3 class="project-title">WhisperInk</h3>
-      <p class="project-description">A Website created for a young female tattoo artist.</p>
+    <div class="projects-grid">
+      <a href="https://whisperinkhome.netlify.app/" target="_blank">
+        <div class="project-card" data-category="web-dev">
+          <img src="/ProjectImages/ProjectImage 1.jpg" class="project-img">
+        <div class="project-content">
+          <span class="project-category">Web Development</span>
+          <h3 class="project-title">WhisperInk</h3>
+          <p class="project-description">A Website created for a young female tattoo artist.</p>
+        </div>
+      </div>
+      </a>
+      
+      <a href="https://nlensmuse.netlify.app/" target="_blank">
+        <div class="project-card" data-category="web-dev">
+        <img src="/ProjectImages/ProjectImage 1.jpg" class="project-img">
+        <div class="project-content">
+          <span class="project-category">Web Development</span>
+          <h3 class="project-title">N_LensMuse</h3>
+          <p class="project-description">Clean, modern UI/UX design focusing on data visualization and user-friendly navigation aesthetics.</p>
+        </div>
+      </div>
+      </a>
+      
+      <a href="" target="_blank">
+      <div class="project-card" data-category="audio">
+        <img src="https://via.placeholder.com/350x200" alt="Audio Cleaning" class="project-img">
+        <div class="project-content">
+          <span class="project-category">Audio Editing</span>
+          <h3 class="project-title">Commercial Voiceover Mix</h3>
+          <p class="project-description">Noise reduction, equalization, and mastering for a 30-second radio advertisement.</p>
+        </div>
+      </div>
+      </a>
+      
+      <a href="" target="_blank">
+      <div class="project-card" data-category="video">
+        <img src="https://via.placeholder.com/350x200" alt="Video Project" class="project-img">
+        <div class="project-content">
+          <span class="project-category">Video Editing</span>
+          <h3 class="project-title">Cinematic Travel Vlog</h3>
+          <p class="project-description">Dynamic color grading, sound design, and seamless transitions for a YouTube travel creator.</p>
+        </div>
+      </div>
+      </a>
+      
+      <a href="" target="_blank">
+      <div class="project-card" data-category="podcasting">
+        <img src="https://via.placeholder.com/350x200" alt="Podcast Episode" class="project-img">
+        <div class="project-content">
+          <span class="project-category">Podcasting</span>
+          <h3 class="project-title">Tech Talk - Episode 12</h3>
+          <p class="project-description">Full production of a multi-guest podcast, including intro/outro arrangement and loudness matching.</p>
+        </div>
+      </div>
+      </a>
     </div>
-  </div>
-  </a>
-  
-  <a href="https://nlensmuse.netlify.app/" target="_blank">
-    <div class="project-card" data-category="web-dev">
-    <img src="/ProjectImages/ProjectImage 1.jpg" class="project-img">
-    <div class="project-content">
-      <span class="project-category">Web Development</span>
-      <h3 class="project-title">N_LensMuse</h3>
-      <p class="project-description">Clean, modern UI/UX design focusing on data visualization and user-friendly navigation aesthetics.</p>
-    </div>
-  </div>
-  </a>
-  
-  <a href="" target="_blank">
-  <div class="project-card" data-category="audio">
-    <img src="https://via.placeholder.com/350x200" alt="Audio Cleaning" class="project-img">
-    <div class="project-content">
-      <span class="project-category">Audio Editing</span>
-      <h3 class="project-title">Commercial Voiceover Mix</h3>
-      <p class="project-description">Noise reduction, equalization, and mastering for a 30-second radio advertisement.</p>
-    </div>
-  </div>
-  </a>
-  
-  <a href="" target="_blank">
-  <div class="project-card" data-category="video">
-    <img src="https://via.placeholder.com/350x200" alt="Video Project" class="project-img">
-    <div class="project-content">
-      <span class="project-category">Video Editing</span>
-      <h3 class="project-title">Cinematic Travel Vlog</h3>
-      <p class="project-description">Dynamic color grading, sound design, and seamless transitions for a YouTube travel creator.</p>
-    </div>
-  </div>
-  </a>
-  
-  <a href="" target="_blank">
-  <div class="project-card" data-category="podcasting">
-    <img src="https://via.placeholder.com/350x200" alt="Podcast Episode" class="project-img">
-    <div class="project-content">
-      <span class="project-category">Podcasting</span>
-      <h3 class="project-title">Tech Talk - Episode 12</h3>
-      <p class="project-description">Full production of a multi-guest podcast, including intro/outro arrangement and loudness matching.</p>
-    </div>
-  </div>
-  </a>
-</div>
     </section>
     
     <section class="workflow" id="workflow">
@@ -169,6 +172,50 @@
       </div>
     </section>
     
+    <section class="reviews-section" id="review">
+      <h1 class="review-header">Client Reviews & Testimonials</h1>
+      
+      <div class="carousel-container">
+        <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous Review">&#10094;</button>
+        <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next Review">&#10095;</button>
+        
+        <div class="carousel-track-container">
+          <div class="carousel-track" id="carouselTrack">
+            
+            <div class="review-card">
+              <div class="stars">★★★★★</div>
+              <p class="review-text">"The web development work was flawless. Our site traffic increased by 40% within the first month. Incredible attention to detail!"</p>
+              <h4 class="client-name">Sarah Jenkins</h4>
+              <span class="project-type">E-commerce Platform</span>
+            </div>
+            
+            <div class="review-card">
+              <div class="stars">★★★★★</div>
+              <p class="review-text">"Excellent video editing and production quality. They truly captured our brand's voice and delivered ahead of schedule."</p>
+              <h4 class="client-name">Michael Chang</h4>
+              <span class="project-type">Promo Video Campaign</span>
+            </div>
+            
+            <div class="review-card">
+              <div class="stars">★★★★☆</div>
+              <p class="review-text">"Great communication throughout the entire project. The audio engineering on our podcast episodes was crisp and professional."</p>
+              <h4 class="client-name">David Ndlovu</h4>
+              <span class="project-type">Audio Editing & Mixing</span>
+            </div>
+    
+             <div class="review-card">
+              <div class="stars">★★★★★</div>
+              <p class="review-text">"Fantastic UI/UX design. They turned a highly complex concept into a beautiful, user-friendly dashboard."</p>
+              <h4 class="client-name">Elena Rostova</h4>
+              <span class="project-type">Web Application Design</span>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
     <section class="contact" id="contact">
       <form class="contact-form">
         <h1 class="contact-header">Let's build your dream together</h1>
@@ -176,46 +223,46 @@
         
         <form id="portfolio-contact-form" action="https://formspree.io/f/your_form_id_here" method="POST">
   
-  <div class="fill-text">
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    
-    <div class="form-group">
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-  </div>
-  
-  <div class="form-group">
-    <label class="interested">What services are you interested in? (Optional)</label>
-    <div class="checkbox-group">
-      <label class="checkbox-label">
-        <input type="checkbox" name="category[]" value="Web Development"> Web Development
-      </label>
-      <label class="checkbox-label">
-        <input type="checkbox" name="category[]" value="Web Design"> Web Design
-      </label>
-      <label class="checkbox-label">
-        <input type="checkbox" name="category[]" value="Audio Editing"> Audio Editing
-      </label>
-      <label class="checkbox-label">
-        <input type="checkbox" name="category[]" value="Video Editing"> Video Editing
-      </label>
-      <label class="checkbox-label">
-        <input type="checkbox" name="category[]" value="Full Suite"> Full Suite
-      </label>
-    </div>
-  </div>
-  
-  <button type="submit" id="submit-btn">Send Message</button>
-</form>
-</div>
-
-<div id="success-popup" class="popup-notification">
-  Email sent successfully!
-</div>
+        <div class="fill-text">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="interested">What services are you interested in? (Optional)</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="category[]" value="Web Development"> Web Development
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="category[]" value="Web Design"> Web Design
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="category[]" value="Audio Editing"> Audio Editing
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="category[]" value="Video Editing"> Video Editing
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="category[]" value="Full Suite"> Full Suite
+            </label>
+          </div>
+        </div>
+        
+        <button type="submit" id="submit-btn">Send Message</button>
+      </form>
+      </div>
+      
+      <div id="success-popup" class="popup-notification">
+        Email sent successfully!
+      </div>
     </section>
   </main>
   
@@ -228,5 +275,6 @@
 <!--JavaScript of BDP-->
 <script src="/FilterSection.js"></script>
 <script src="/FormJavaScript.js"></script>
+<script src="/Review-Carousel.js"></script>
 
 </html>
