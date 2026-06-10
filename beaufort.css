@@ -228,7 +228,7 @@ nav li{
 /* Card Container & Perspective */
 .skill-card {
   background-color: transparent;
-  height: 400px;
+  height: 60vh;
   perspective: 1000px; /* Essential for 3D effect */
   cursor: pointer;
 }
