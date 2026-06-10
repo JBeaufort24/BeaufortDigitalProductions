@@ -200,35 +200,155 @@ nav li{
   padding: 10px 5px;
 }
 
-/*Skill Section*/
-.skills-header{
-  color: var(--main-text-alt);
+/*New Skill Section*/
+/* Section Setup */
+.skills-section {
+  padding: 30px 10px;
+  margin: 0 auto;
 }
 
-.skills-sub{
-  color: var(--sub-text);
-}
-
-.skills-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.skill-card{
-  background: rgba(0, 0, 0, .5);
-  border-radius: 10px;
-  padding: 30px;
-  margin: 10px;
-}
-
-.skill-header{
+.skills-section h1 {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  color: var(--main-text-alt);
+}
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
   color: var(--sub-text);
 }
 
-.skill-paragraph{
-  color: var(--main-text-alt);
+/* Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+/* Card Container & Perspective */
+.skill-card {
+  background-color: transparent;
+  height: 400px;
+  perspective: 1000px; /* Essential for 3D effect */
+  cursor: pointer;
+}
+
+/* Inner wrapper to handle rotation */
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+/* Toggle Class applied via JavaScript */
+.skill-card.is-flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front & Back Face Base Styles */
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari support */
+  backface-visibility: hidden;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Front Styling */
+.card-front {
+  background: linear-gradient(135deg, var(--color1), var(--color2), var(--color3), var(--color4));
+  color: var(--sub-text);
+}
+
+/* Back Styling */
+.card-back {
+  background-color: var(--background-alt);
+  color: var(--sub-text-alt);
+  transform: rotateY(180deg);
+}
+
+/* Content Layout Inner Padding */
+.card-content {
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* Front Face Elements */
+.card-front h3 {
+  font-size: var(--h2-size);
+  margin: 10px 0;
+}
+
+.card-front p {
+  font-size: var(--p-size);
+  line-height: 2;
+  opacity: 0.9;
+}
+
+/* Back Face Elements & Experience List */
+.card-back h3 {
+  font-size: var(--h2-size);
+  margin-bottom: 20px;
+  color: var(--color3);
+  border-bottom: 2px solid var(--sub-text-alt);
+  padding-bottom: 10px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.skills-list li:last-child {
+  border-bottom: none;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: var(--sub-text-alt);
+}
+
+.years {
+  background-color: var(--main-text-alt);
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: var(--p-size);
+  font-weight: var(--heavy-weight);
+  color: var(--sub-text-alt);
+}
+
+/* Subtle prompt text at the bottom */
+.hint-text {
+  font-size: var(--p-size);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  margin-top: 15px;
 }
 
 /*Project Section*/
