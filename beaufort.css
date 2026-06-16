@@ -24,8 +24,6 @@
   --mild-weight: 500;
   --light-weight: 200;
   
-  --main-font:;
-  --sub-font:;
 }
 /*html, body, header, paragraph,  all*/
 *{
@@ -41,6 +39,7 @@ html{
 
 body{
   background: var(--background);
+  font-family: "Pliant", sans-serif;
 }
 
 h1{
@@ -144,8 +143,8 @@ nav{
   background: rgba(0, 0, 0, .1);
   
   backdrop-filter: blur(10px);/* Blurs the content underneath */
-    z-index: 10;
-    padding: 5px;
+  z-index: 10;
+  padding: 5px;
 }
 
 nav ul{
