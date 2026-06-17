@@ -754,6 +754,10 @@ nav li{
       width: 100%;
     }
     
+    .skill-card {
+      height: 350px;
+    }
+    
     .skills-grid {
       grid-template-columns: 1fr;
     }
